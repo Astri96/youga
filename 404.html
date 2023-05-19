@@ -1,95 +1,156 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>404 Negro</title>
-        <style type="text/css" media="all">
-            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=https://youga.my.id">
+  <title>404 Page</title>
+  <style>
+	*{
+	padding:0px;
+	margin:0px;
+}
+body{
+		background:black;
+	}
+.st0{font-family:'FootlightMTLight';}
+.st1{font-size:83.0285px;}
+.st2{fill:gray;}
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Press Start 2P';
-    color: #FFFFFF;
+svg{
+  width: 500px;
+    height: 400px;
     text-align: center;
+    fill: #16a085;
+}
+path#XMLID_5_ {
+   
+    fill: #16a085;
+    filter: url(#blurFilter4);
+}
+path#XMLID_11_ ,path#XMLID_2_ {
+    fill: #16a085;
+}
+.circle{
+  animation: out 2s infinite ease-out;
+  fill: #16a085;
 }
 
-body {
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23dddcdd' fill-opacity='0.23'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+#container{
+  text-align:center;
+}
+.message{
+	color:#16a085;
+}
+.message:after{
+	content:"]";
+}
+.message:before{
+	content:"[";
 }
 
-section.notFound {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5%;
-    height: 100vh;
+.message:after, .message:before {
+  
+  color: #16a085;
+  font-size: 20px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          margin:0 50px;
 }
 
-section.notFound h1 {
-    color: red;
-    font-size: 100px;
-}
-
-section.notFound h2 {
-    font-size: 50px;
-}
-
-section.notFound h1, h2, h3 {
-    margin-bottom: 40px;
-}
-
-div.text {
-    height: 50vh;
-}
-
-div.text a {
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-div.text a:hover {
-    color: red;
-    text-decoration: underline; 
-}
-
-@media only screen and (max-width: 768px) {
-    section.notFound {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    section.notFound div.img img {
-        width: 70vw;
-        height: auto;
-    }
-    section.notFound h1 {
-        font-size: 50px;
-    }
-    section.notFound h2 {
-        font-size: 25px;
-    }
-    div.text a:active {
-    color: red;
-    text-decoration: underline; 
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
-        </style>
-    </head>
-    <body>
-    <section class="notFound">
-        <div class="img">
-        <img src="https://assets.codepen.io/5647096/backToTheHomepage.png" alt="Back to the Homepage"/>
-        <img src="https://assets.codepen.io/5647096/Delorean.png" alt="El Delorean, El Doc y Marti McFly"/>
-        </div>
-        <div class="text">
-        <h1>404</h1>
-        <h2>PAGE NOT FOUND</h2>
-        <h3>BACK TO HOME?</h3>
-        <a href="https://pantatcina.biz.id" class="yes">YES</a>
-        <a href="https://youtu.be/mxt0xSSS-_A">NO</a>
-        </div>
-    </section>
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  0% {r:1;  opacity: 0.9 ;}
+  25%{r:5;  opacity: 0.3 ;}
+  50%{r:10; opacity: 0.2 ;}
+  75%{r:15;opacity:0.1;}
+ 	100% {r:20;opacity:0;}
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+ <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	 <link rel="stylesheet" href="css/futuriste.css">
+  <title>404 pages</title>
+</head>
+
+<body>
+
+
+<div id="container">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 82.7" style="enable-background:new 0 0 200 82.7;" xml:space="preserve">
+
+<g id="Calque_1">
+	<text id="XMLID_3_" transform="matrix(1.2187 0 0 1 13 75.6393)" class="st0 st1">4</text>
+	<text id="XMLID_4_" transform="matrix(1.2187 0 0 1 133.0003 73.6393)" class="st0 st1">4</text>
+</g>
+<g id="Calque_2">
+<g>
+	<path id="XMLID_11_" d="M81.8,29.2c4.1-5.7,10.7-9.4,18.3-9.4c6.3,0,12.1,2.7,16.1,6.9c0.6-0.4,1.1-0.7,1.7-1.1
+		c-4.4-4.8-10.8-7.9-17.8-7.9c-8.3,0-15.6,4.2-20,10.6C80.7,28.5,81.3,28.8,81.8,29.2z"/>
+		<path id="XMLID_2_" d="M118.1,53.7c-4,5.7-10.7,9.5-18.2,9.5c-6.3,0-12.1-2.6-16.2-6.8c-0.6,0.4-1.1,0.7-1.7,1.1
+		c4.4,4.8,10.8,7.8,17.9,7.8c8.3,0,15.6-4.3,19.9-10.7C119.2,54.5,118.6,54.1,118.1,53.7z"/>
+		 <animateTransform attributeName="transform" type="rotate" from="360 100 41.3" to="0 100 41.3" dur="10s" repeatCount="indefinite" />
+  </g>
+  <g id="XMLID_6_">
+  <g  id="XMLID_18_">	
+  	
+
+  		
+  		<circle class="circle"  cx="100" cy="41" r="1"></circle>
+  	</g>
+  </g><defs>
+  		<filter id="blurFilter4" x="-20" y="-20" width="200" height="200">
+  			<feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+  		</filter>
+  	</defs>
+  <path    id="XMLID_5_" class="st2" d="M103.8,16.7c0.1,0.3,0.1,0.6,0.1,0.9c11.6,1.9,20.4,11.9,20.4,24.1c0,13.5-10.9,24.4-24.4,24.4
+  S75.6,55.1,75.6,41.7c0-3.2,0.6-6.3,1.7-9.1c-0.3-0.2-0.5-0.3-0.7-0.5c-1.2,3-1.9,6.2-1.9,9.6c0,14,11.3,25.3,25.3,25.3
+  s25.3-11.3,25.3-25.3C125.3,29,115.9,18.5,103.8,16.7z"/>
+
+
+</g>
+</svg>
+
+<div class="message">
+     Page not found
+</div>
+</div>
+</body>
+	</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
