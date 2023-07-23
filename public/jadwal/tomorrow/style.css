@@ -1,0 +1,57 @@
+/* Gaya tampilan untuk halaman index.html */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Gunakan min-height agar konten tetap terlihat jika konten melebihi layar */
+}
+
+.container {
+    width: 90%; /* Lebar kontainer akan menjadi 90% dari lebar layar */
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#schedule-container {
+    border: 1px solid #666;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.schedule-card {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #888;
+}
+
+button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #800;
+}
+
+/* Gaya tampilan untuk layar handphone */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Lebar kontainer akan menjadi 100% dari lebar layar pada layar handphone */
+    }
+}
