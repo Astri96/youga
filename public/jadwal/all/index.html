@@ -3,14 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semua Jadwal Pelajaran</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jadwal Mata Pelajaran Sekolah</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #00ff00;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #00ff00;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0066cc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #191919;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #800;
+}
+
+        /* Animasi Loading */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-container {
+    text-align: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.glow {
+    width: 10px;
+    height: 10px;
+    background: #0f0;
+    border-radius: 50%;
+    position: absolute;
+    animation: glow 1s infinite alternate;
+}
+
+.glow:nth-child(1) {
+    left: 0;
+    animation-delay: 0.2s;
+}
+
+.glow:nth-child(2) {
+    left: 20px;
+    animation-delay: 0.4s;
+}
+
+.glow:nth-child(3) {
+    left: 40px;
+    animation-delay: 0.6s;
+}
+
+@keyframes glow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#schedule-table {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div id="schedule-container"></div>
-        <a href="/jadwal"><button>Lihat Semua Jadwal</button></a>
+    <div class="loading-overlay">
+        <div class="loader-container">
+            <div class="loader">
+                <div class="glow"></div>
+                <div class="glow"></div>
+                <div class="glow"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <table border="1" id="schedule-table">
+        <caption>Jadwal Mata Pelajaran Sekolah</caption>
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru</th>
+                <th>Kelas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Senin</td>
+                <td>Matematika</td>
+                <td>Murniyati, S.PdI</td>
+                <td rowspan="3">X PPL</td>
+            </tr>
+            <tr>
+                <td>Kewirausahaan</td>
+                <td>Yuli Fitrianingsih, S.Pd</td>
+            </tr>
+            <tr>
+                <td>Bahasa Indonesia</td>
+                <td>Novia Ariani, S.Pd</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Selasa</td>
+                <td>Basis Data</td>
+                <td>Ahmad Suryadi, S.Kom</td>
+                <td rowspan="2">LAB RPL</td>
+            </tr>
+            <tr>
+                <td>Produktif RPL</td>
+                <td>Zia Mustofa, S.Kom</td>
+            </tr>
+            <tr>
+                <td>Bahasa Jepang</td>
+                <td>Novita Yolasari, S.S</td>
+                <td>X PPL</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Rabu</td>
+                <td>Kewirausahaan</td>
+                <td>Yuli Fitrianingsih, S.Pd</td>
+                <td rowspan="4">X PPL</td>
+            </tr>
+            <tr>
+                <td>Al-Qur'an</td>
+                <td>M. Tasrif Marzoeki, S.PdI</td>
+            </tr>
+            <tr>
+                <td>Matematika</td>
+                <td>Murniyati, S.PdI</td>
+            </tr>
+            <tr>
+                <td>Bahasa Inggris</td>
+                <td>Taufan Galuh, S.Pd</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Kamis</td>
+                <td>Pemrograman Berorientasi Objek</td>
+                <td>Ahmad Suryadi, S.Kom</td>
+                <td rowspan="2">LAB RPL</td>
+            </tr>
+            <tr>
+                <td>Produktif RPL</td>
+                <td>Zia Mustofa, S.Kom</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Jum'at</td>
+                <td>Produktif RPL</td>
+                <td>Zia Mustofa, S.Kom</td>
+                <td rowspan="4">XI PPL</td>
+            </tr>
+            <tr>
+                <td>Al-Qur'an</td>
+                <td>M. Tasrif Marzoeki, S.PdI</td>
+            </tr>
+            <tr>
+                <td>PKN</td>
+                <td>Risa Rinasari, S.Pd</td>
+            </tr>
+            <tr>
+                <td>Pemrograman Berorientasi Objek</td>
+                <td>Ahmad Suryadi, S.Kom</td>
+            </tr>
+            <!-- Lanjutkan dengan entri untuk hari dan jam lainnya -->
+        </tbody>
+    </table>
+    <a href="/jadwal"><button>Kembali ke Jadwal</button></a>
+    <script>
+        // Fungsi untuk menampilkan tabel dan menghilangkan animasi loading
+        function showTableAndHideLoading() {
+            // Menampilkan tabel
+            var scheduleTable = document.getElementById('schedule-table');
+            scheduleTable.style.display = 'table';
+
+            // Menghilangkan animasi loading
+            var loadingOverlay = document.querySelector('.loading-overlay');
+            loadingOverlay.style.display = 'none';
+        }
+
+        // Set timeout untuk menampilkan tabel dan menghilangkan animasi loading setelah 3 detik (3000 milidetik)
+        setTimeout(showTableAndHideLoading, 3000);
+    </script>
+        
 </body>
 </html>
