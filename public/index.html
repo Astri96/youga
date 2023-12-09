@@ -1,71 +1,329 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Yoga Astri Yudistira</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Youga</title>
+    <link rel="icon" href="gambar/yogangudud.png" />
+    <!-- CSS Pribadi -->
+    <link rel="stylesheet" href="style.css" />
 
-</head>
-<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'>
-<!-- partial:index.partial.html -->
-<aside class="profile-card">
-  <header>
-    <!-- here’s the avatar -->
-    <a target="_blank" href="#">
-      <img src="yoga.jpg" class="hoverZoomLink">
-    </a>
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="dist/output.css" />
 
-    <!-- the username -->
-    <h1>
-            Yoga Astri Yudistira
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'>
+    <!-- Navbar -->
+
+    <nav style="background: black; position:fixed; width: 100%;" class="z-10">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <div class="flex md:order-2">
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center text-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul class="flex flex-col justify-center font-medium p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:bg-gray-900 border-gray-700">
+            <li>
+              <a href="#digeboy" class="block py-2 pl-3 pr-4 rounded md:hover:text-blue-300 md:p-0 hover:text-blue-500 text-white hover:bg-gray-800 hover:bg-transparent border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#geboy" class="block py-2 pl-3 pr-4 rounded md:hover:text-blue-300 md:p-0 hover:text-blue-500 text-white hover:bg-gray-800 hover:bg-transparent border-gray-700">Skill</a>
+            </li>
+            <li>
+              <a href="#mojair" class="block py-2 pl-3 pr-4 rounded md:hover:text-blue-300 md:p-0 hover:text-blue-500 text-white hover:bg-gray-800 hover:bg-transparent border-gray-700">Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Akhir navbar -->
+
+    <!-- Jumbotron -->
+
+    <section class="iseng2 w-full h-1/2 pt-12" id="digeboy">
+      <div class="px-4 mx-auto max-w-screen-xl text-center pt-8 lg:pt-12">
+        <div class="flex justify-center items-center w-full mb-0">
+          <div class="" id="img-profil">
+            <div id="content">
+              <img src="yoga.jpg" alt="image description" />
+            </div>
+          </div>
+        </div>
+        <h1 class="mb-3 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Hello, I am<br /><span id="typewriter"></span><span id="cursor">|</span></h1>
+        <p class="mb-5 text-lg font-extrabold text-gray-300 lg:text-xl sm:px-16 lg:px-o">
+          Just a beginer developer and still learning about program. I was born in Jakarta, Indonesia. I'm 17 years old and still in calss 3 high school.<span id="typewriter2"></span><span id="cursor">|</span>
+        </p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center pb-32 sm:space-y-0 sm:space-x-4">
+          <!-- <a href="#" class="inline-flex justify-center items-center py-5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Download CV
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a> -->
+
+          <a class="wrapper" href="https://wa.me/6285174159094" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact Me
+          </a>
+
+          <button data-modal-target="defaultModal" data-modal-toggle="defaultModalsmk"
+            class="inline-flex justify-center bg-white hover:text-white items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-white hover:bg-gray-800 focus:ring-4 focus:ring-gray-400"
+          >
+            Jadwal XII RPL
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="defaultModalsmk" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg lg:w-10/12 h-96 m-auto shadow overflow-hidden dark:bg-gray-700 flex flex-wrap">
+               <a href="/jadwal/all" class="flex w-full h-1/4 bg-yellow-300 mx-3 my-4 justify-center items-center rounded-lg">
+                <h1 class="font-bold text-3xl">Semua Jadwal</h1>
+               </a>
+               <a href="/jadwal/today" class="flex w-full h-1/4 bg-red-500 mx-3 my-4 justify-center items-center rounded-lg">
+                <h1 class="font-bold text-3xl">Jadwal Hari Ini</h1>
+               </a>
+               <a href="/jadwal/tomorrow" class="flex w-full h-1/4 bg-blue-500 mx-3 my-4 justify-center items-center rounded-lg">
+                <h1 class="font-bold text-3xl">Jadwal Besok</h1>
+               </a>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- akhir jumbotron -->
+
+    <!-- Section portofolio -->
+
+    <section class="iseng mt-10 flex justify-center items-center h-screen w-full" id="geboy">
+      <div class="pb-16">
+        <div class="p-4 md:p-12 mb-4 flex justify-center">
+          <h1 class="wrapper text-3xl bg-red-800 text-yellow-100" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SOFT SKILL
           </h1>
+        </div>
 
-    <!-- and role or location -->
-    <h2>
-            The King of Kila
-          </h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-lg w-40 h-40" src="gambar/logo/JavaScript_Logo.png" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">JavaScript</h5>
+                <p class="mb-3 font-normal text-white">Basic Java Script, bahasa pemprograman untuk keperluan animation atau backend dari web.</p>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-lg w-40 h-40" src="gambar/logo/PHP-logo.png" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">PHP</h5>
+                <p class="mb-3 font-normal text-white">untuk backend development web</p>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-lg w-40 h-40" src="gambar/logo/tailwindcss-logo.jpg" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Tailwind CSS</h5>
+                <p class="mb-3 font-normal text-white">FrameWork CSS untuk UI atau frontend </p>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-lg w-40 h-40" src="gambar/logo/htmlcss-logo.png" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">HTML & CSS</h5>
+                <p class="mb-3 font-normal text-white">Website development.</p>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-lg w-40 h-40" src="gambar/logo/mysql-logo.png" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">MySQL</h5>
+                <p class="mb-3 font-normal text-white">untuk keperluan Database</p>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-xs bg-purple-950 rounded-lg shadow">
+              <div class="flex justify-center items-center h-52 w-80">
+                <img class="rounded-t-lg w-40 h-40" src="gambar/logo/canva-logo.png" alt="" />
+              </div>
+              <div class="p-5 text-center w-80">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Canva</h5>
+                <p class="mb-3 font-normal text-white">Untuk keperluan Graphic design</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-8 bg-red-400 opacity-25">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </header>
+    <section class="bg-black h-auto" id="mojair">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl relative lg:py-6">
+        <div class="p-4 md:p-12 mb-4 justify-center flex text-center">
+          <h1 class="wrapper text-3xl bg-yellow-300 text-black" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Portofolio
+          </h1>
+        </div>
+        <div class="w-full justify-center flex">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="max-w-sm bg-black border border-blue-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a>
+                <img class="rounded-t-lg" src="gambar/project3.png" alt="" />
+              </a>
+              <div class="p-5">
+                <a>
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Nurul Islam Vocational School Digital Library</h5>
+                </a>
+                <p class="mb-3 text-xl font-normal text-white">This is a digital library website created by me and my friends at SMK Nurul Islam Jakarta. This project was created using Laravel as the main framework. Functions so that students can read books without having to go to the library, students can also read them anywhere and anytime.</p>
+              </div>
+            </div>
+            <div class="max-w-sm bg-black border border-blue-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                <img class="rounded-t-lg" src="gambar/project2.png" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Whatsapp Bot</h5>
+                </a>
+                <p class="mb-3 text-xl font-normal text-white">Offering versatility through features like stickers, games, social media content downloads, and group management.</p>
+                <a
+                  href="http://negro.my.id"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Visit Web
+                  <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- bit of a bio; who are you? -->
-  <div class="profile-bio">
+    <!-- Akhir Section Portofolio -->
 
-    <p>
-      My name is Yoga Astri Yudistira, you can call me Yoga. I was born in Jakarta, Indonesia. I'm 17 years old and still in calss 3 high school.
-    </p>
+    <!-- footer -->
 
-  </div>
+    <footer class="bg-blue-900 relative" id="contact-me">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://youga.my.id" class="flex items-center">
+              <span class="tech self-center text-2xl font-semibold whitespace-nowrap">The King of Kila</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="tech mb-6 text-sm font-semibold uppercase">Contact Me</h2>
+              <ul class="text-gray-200 font-medium">
+                <li class="mb-4">
+                  <a href="mailto:yogaastri0902@gmail.com" class="hover:underline">Email</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://wa.me/6285174159094" class="hover:underline">Whatsapp</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="tech mb-6 text-sm font-semibold uppercase e">Follow Me</h2>
+              <ul class="text-gray-200 font-medium">
+                <li class="mb-4">
+                  <a href="https://www.facebook.com/people/Yoga-Astri-Yudistira/100010847747394/" class="hover:underline">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/agoydarijaksel" class="hover:underline">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="tech mb-6 text-sm font-semibold uppercase">Legal</h2>
+              <ul class="text-gray-200 font-medium">
+                <li class="mb-4">
+                  <a class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-center text-gray-200 sm:text-center dark:text-gray-400">© 2023 <a href="https://youga.my.id/" class="hover:underline">Youga</a>. All Rights Reserved. </span>
+        </div>
+      </div>
+    </footer>
 
-  <!-- some social links to show off -->
-  <ul class="profile-social-links">
-    <li>
-      <a target="_blank" href="https://www.facebook.com/people/Yoga-Astri-Yudistira/100010847747394/">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://wa.me/6285174159094">
-        <i class="fa fa-whatsapp"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://instagram.com/yoga.ptc">
-        <i class="fa fa-instagram"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="/jadwal">
-       
-        <i class="fa fa-link"></i>
-      </a>
-    </li>
-  </ul>
-</aside>
-<!-- partial -->
-  
-</body>
+    <!-- Script saya -->
+    <script src="script.js"></script>
+
+    <!-- Script flow bit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 2,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
 <script type='text/javascript'>
   shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};
   if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);
@@ -83,4 +341,5 @@
   function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;
   c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("Ctrl+U",function(){top.location.href="http://sahretech.com"});
 </script>
+  </body>
 </html>
